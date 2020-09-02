@@ -1,0 +1,21 @@
+{
+	"name": "sourceexcel",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorageinput",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Sheet1",
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "keshu.xlsx",
+				"container": "input"
+			}
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
