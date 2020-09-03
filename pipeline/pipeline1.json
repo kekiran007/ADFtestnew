@@ -57,6 +57,12 @@
 				]
 			}
 		],
+		"variables": {
+			"1": {
+				"type": "Array",
+				"defaultValue": "1"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2020-09-01T04:56:41Z"
 	},
