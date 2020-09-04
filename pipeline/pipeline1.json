@@ -88,6 +88,26 @@
 						"type": "AzureBlobStorageReadSettings"
 					}
 				}
+			},
+			{
+				"name": "Set variable1",
+				"type": "SetVariable",
+				"dependsOn": [
+					{
+						"activity": "Get Metadata1",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"userProperties": [],
+				"typeProperties": {
+					"variableName": "test",
+					"value": {
+						"value": "@activity('Get Metadata1').output.LastModified",
+						"type": "Expression"
+					}
+				}
 			}
 		],
 		"variables": {
