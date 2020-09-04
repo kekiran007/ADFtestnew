@@ -81,12 +81,7 @@
 					"headers": {
 						" Content-Type": "application/json"
 					},
-					"body": {
-						"message": "@{activity('Copy1').error.message}",
-						"dataFactoryName": "@{pipeline().DataFactory}",
-						"pipelineName": "@{pipeline().Pipeline}",
-						"receiver": "@pipeline().parameters.receiver"
-					}
+					"body": ""
 				}
 			}
 		],
